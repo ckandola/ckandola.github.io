@@ -10,10 +10,11 @@ body {
 }
 
 nav {
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     right: 0;
+    margin: -0.4rem;
     background-color: var(--nav_background);
     padding: 1rem;
     justify-content: flex-end;
@@ -31,11 +32,10 @@ nav a {
 }
 
 nav a:hover {
-    color: white;
+    color: rgba(255, 255, 255, 0.6);
     text-shadow: 0 0 30px white;
 }
 
 .about {
-    top: 50%;
-    position: absolute;
+    
 }
