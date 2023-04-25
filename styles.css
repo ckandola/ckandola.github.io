@@ -1,6 +1,7 @@
 :root {
     --red-background: linear-gradient(45deg, rgba(171, 19, 70, 0.937), rgb(220, 196, 196));
     --red-darkest: rgb(160, 19, 70);
+    --red-pale: rgba(160, 19, 70, 0.5);
     --light-background: rgba(255, 255, 255, 0.7);
     --light-background-hover: rgba(255, 255, 255, 0.67);
     --border_radius: 0.2rem;
@@ -80,7 +81,7 @@ nav a:hover {
     padding: 0 5vw;
 }
 
-.desc a {
+.return_link {
     display: block;
     margin: 5rem auto auto;
     padding: 1rem 1.5rem 1.5rem;
@@ -92,7 +93,7 @@ nav a:hover {
     font-weight: 600;
 }
 
-.desc a:hover {
+.return_link:hover {
     box-shadow: 0px 0px 5px var(--red-darkest);
 }
 
@@ -130,6 +131,24 @@ nav a:hover {
     line-height: normal;
 }
 
+
 .language_tile:hover {
     background-color: var(--light-background-hover);
+}
+
+.language_list {
+    width: 75%;
+    margin: auto;
+    text-align: left;
+}
+
+.language_list li {
+    margin: 0.75rem auto;
+}
+
+.break {
+    background-color: var(--red-pale);
+    height: 0.4rem;
+    border-radius: var(--border_radius);
+    margin: 0.25rem;
 }
