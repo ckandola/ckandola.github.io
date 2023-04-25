@@ -4,6 +4,7 @@
     --light-background: rgba(255, 255, 255, 0.7);
     --light-background-hover: rgba(255, 255, 255, 0.67);
     --border_radius: 0.2rem;
+    --language_tile_length: 8rem;
 }
 
 body {
@@ -97,4 +98,38 @@ nav a:hover {
 
 .underline_on_hover:hover {
     text-decoration: underline;
+}
+
+/* projects section --------------------------------------------------------------------------- */
+.language_grid {
+    /* background-color: aqua; */
+    max-width: 70vw;
+    overflow-x:hidden;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-rows: 1f 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.language_tile {
+    height: var(--language_tile_length);
+    width: var(--language_tile_length);
+    text-align: center;
+    line-height: var(--language_tile_length);
+    transition-duration: 0.25s;
+    border-radius: var(--border_radius);
+}
+
+.language_tile span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.language_tile:hover {
+    background-color: var(--light-background-hover);
 }
