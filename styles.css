@@ -1,11 +1,11 @@
 :root {
     --red-background: linear-gradient(45deg, rgba(171, 19, 70, 0.937), rgb(220, 196, 196));
     --red-darkest: rgb(160, 19, 70);
-    --red-pale: rgba(160, 19, 70, 0.5);
+    --red-palest: rgba(160, 19, 70, 0.3);
     --light-background: rgba(255, 255, 255, 0.7);
     --light-background-hover: rgba(255, 255, 255, 0.67);
     --border_radius: 0.2rem;
-    --language_tile_length: 8rem;
+    --language_tile_length: 9rem;
 }
 
 body {
@@ -107,9 +107,8 @@ nav a:hover {
     overflow-x:hidden;
     margin: 2rem auto;
     display: grid;
-    grid-template-rows: 1f 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1.5rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     font-weight: 800;
     font-size: 1.25rem;
@@ -132,21 +131,23 @@ nav a:hover {
 
 
 .language_tile:hover {
-    background-color: var(--light-background-hover);
+    background-color: var(--red-palest);
 }
 
 .language_list {
-    width: 75%;
+    width: 50%;
     margin: auto;
     text-align: left;
 }
 
 .language_list li {
     margin: 0.75rem auto;
+    font-size: 1.2rem;
 }
 
+
 .break {
-    background-color: var(--red-pale);
+    background-color: var(--red-palest);
     height: 0.4rem;
     border-radius: var(--border_radius);
     margin: 0.25rem;
