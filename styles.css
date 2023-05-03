@@ -30,6 +30,7 @@ section {
     position: relative;
     top: 15vh;
     width: 80vw;
+    min-height: 800px;
     margin: auto;
     margin-bottom: 38vh;
     padding: 1rem;
@@ -54,10 +55,26 @@ section:hover {
     font-size: 1.5rem;
 }
 
+.greetings h1 {
+    width: 70%;
+    margin-top: 100px;
+}
+
+.greetings span {
+    display: flex;
+    flex-direction: row;
+}
+
+.greetings img {
+    width: 250px;
+    margin-left: 10%;
+    border-radius: 50%;
+}
+
 nav {
     position: fixed;
     width: 100%;
-    top: 70vh;
+    top: 75vh;
     left: 0;
     margin-left: -0.4rem;
     background-color: var(--red-darkest);
@@ -75,6 +92,12 @@ nav a {
 nav a:hover {
     color: rgba(255, 255, 255, 0.6);
     text-shadow: 0 0 30px white;
+}
+
+@media (max-height: 700px) {
+    nav {
+        top: 0px;
+    }
 }
 
 .desc h1 {
