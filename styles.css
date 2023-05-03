@@ -1,6 +1,7 @@
 :root {
     --red-background: linear-gradient(45deg, rgba(171, 19, 70, 0.937), rgb(220, 196, 196));
     --red-darkest: rgb(160, 19, 70);
+    --red-pale: rgba(160, 19, 70, 0.6);
     --red-palest: rgba(160, 19, 70, 0.3);
     --light-background: rgba(255, 255, 255, 0.7);
     --light-background-hover: rgba(255, 255, 255, 0.67);
@@ -174,6 +175,25 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
+.project-example {
+    border-radius: var(--border_radius);
+    width:80%;
+    margin: 2rem auto;
+}
+
+.project-example h2 {
+    margin: 1rem 0 0.5rem;
+}
+
+.project-desc {
+    max-width: 60%;
+    text-align: justify;
+    margin: 0.5rem auto;
+}
+
+.project-desc::before {
+    content: "Description:";
+}
 
 .break {
     background-color: var(--red-palest);
