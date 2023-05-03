@@ -175,6 +175,17 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
+.project-type-link-and-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-type-link-and-header a {
+    width: 27%;
+    padding: 1.6rem;
+    font-weight: 800;
+}
+
 .project-example {
     border-radius: var(--border_radius);
     width:80%;
@@ -199,5 +210,5 @@ nav a:hover {
     background-color: var(--red-palest);
     height: 0.4rem;
     border-radius: var(--border_radius);
-    margin: 0.25rem;
+    margin: 0.25rem 10rem;
 }
