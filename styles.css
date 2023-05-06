@@ -95,12 +95,6 @@ nav a:hover {
     text-shadow: 0 0 30px white;
 }
 
-@media (max-height: 700px) {
-    nav {
-        top: 0px;
-    }
-}
-
 .desc h1 {
     font-size: 2rem;
     font-variant-caps: all-small-caps;
@@ -211,4 +205,51 @@ nav a:hover {
     height: 0.4rem;
     border-radius: var(--border_radius);
     margin: 0.25rem 10rem;
+}
+
+/* Small Screens */
+@media (max-width: 700px) {
+    .greetings {
+        font-size: 2rem;
+    }
+
+    .greetings h1 {
+        width: 100%;
+    }
+
+    .greetings img {
+        width: 221px;
+        height: 166px;
+        margin: 75px 20px;
+    }
+    
+    nav {
+        top: 0px;
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    .return_link {
+        font-size: 1.25rem;
+        width: 20rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .language_grid {
+        overflow-x: scroll;
+    }
+
+    .language_list {
+        width: 75%;
+    }
+
+    .language_list li {
+        font-size: 1rem;
+    }
+
+    .project-example {
+        width: 100%;
+    }
 }
