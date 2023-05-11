@@ -15,7 +15,7 @@ html {
 
 body {
     background-image: var(--red-background);
-    font-family: Candara, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Candara, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.1rem;
     margin: 0;
     background-attachment: fixed;
@@ -210,7 +210,8 @@ nav a:hover {
 /* Small Screens */
 @media (max-width: 700px) {
     .greetings {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        max-width: fit-content;
     }
 
     .greetings h1 {
@@ -229,11 +230,12 @@ nav a:hover {
 
     nav a {
         padding: 1rem;
+        font-size: 2rem;
     }
 
     .return_link {
         font-size: 1.25rem;
-        width: 20rem;
+        width: 17rem;
         padding-bottom: 2.5rem;
     }
 
