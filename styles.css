@@ -169,6 +169,17 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
+.language_list a {
+    border-radius: var(--border_radius);
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+.language_list a:hover {
+    background-color: var(--red-pale);
+    border: none;
+}
+
 .project-type-link-and-header {
     display: flex;
     flex-direction: row;
