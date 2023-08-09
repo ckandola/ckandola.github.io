@@ -105,6 +105,12 @@ nav a:hover {
     padding: 0 5vw;
 }
 
+.desc em::before, em::after {
+    content: "--";
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
 .return_link {
     display: block;
     margin: 5rem auto auto;
@@ -119,6 +125,16 @@ nav a:hover {
 
 .return_link:hover {
     box-shadow: 0px 0px 5px var(--red-darkest);
+}
+
+.return_link_box {
+    margin-top: 2rem;
+}
+
+.return_link_double {
+    display: inline;
+    padding: 1rem;
+    margin: 2rem;
 }
 
 .underline_on_hover:hover {
